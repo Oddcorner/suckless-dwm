@@ -127,6 +127,7 @@ static const Key keys[] = {
 	{ 0, XF86XK_AudioLowerVolume,   spawn,                     {.v = voldowncmd } },
 	{ 0, XF86XK_AudioRaiseVolume,   spawn,                     {.v = volupcmd } },
 	{ MODKEY|ShiftMask,             XK_l,       spawn,         {.v = lockcmd } },
+	{ MODKEY,                       XK_s,       spawn,         SHCMD("maim -so | xclip -selection clipboard -t image/png") },
 };
 
 /* button definitions */
